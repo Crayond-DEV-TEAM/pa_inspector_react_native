@@ -1,4 +1,4 @@
-package com.pa_inspector_app;
+package com.app.pa_inspector_dev;
 
 import android.app.Application;
 import com.facebook.react.PackageList;
