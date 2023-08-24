@@ -73,9 +73,9 @@ android {
 
     compileSdkVersion rootProject.ext.compileSdkVersion
 
-    namespace "com.app.pa_inspector_dev"
+    namespace "com.app.pa_inspector"
     defaultConfig {
-        applicationId "com.app.pa_inspector_dev"
+        applicationId "com.app.pa_inspector"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
