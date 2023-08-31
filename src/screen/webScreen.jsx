@@ -4,10 +4,12 @@ import {
     SafeAreaView,
     StatusBar,
     StyleSheet,
+    Text
 } from 'react-native';
 
 import { WebView } from 'react-native-webview';
 
+import Config from "react-native-config";
 const INJECTED_JAVASCRIPT = `(function() {
     const authLocalStorage = window.localStorage.getItem('authToken');
    
@@ -24,19 +26,21 @@ const WebScreen = (props) => {
     const { diviceToken } = props;
     
     const onMessage = (payload) => {
-        console.log('payload asses', payload);
+        // console.log('payload asses', payload);
     };
 
+    console.log('Config', Config)    
     const WebviewRender = () => {
             return (<WebView
                 injectedJavaScript={INJECTED_JAVASCRIPT}
                 onMessage={onMessage}
-                source={{ uri: `https://inspector.pms2.propgoto.com/` }} style={{ marginTop: 20 }} />
+                source={{ uri: Config?.PROJECT_URL }} style={{ marginTop: 20 }} />
     )
 }
 
     return (
         <SafeAreaView style={styles.container}>
+            <Text style={{fontSize: 50, color:"red"}}>{Config?.APPNAME}</Text>
             <WebviewRender />
         </SafeAreaView>
     );
