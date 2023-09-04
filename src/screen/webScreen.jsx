@@ -40,6 +40,7 @@ const WebScreen = (props) => {
 
     return (
         <SafeAreaView style={styles.container}>
+            {/* <Text style={{fontSize: 50, color:"red"}}>Test</Text> */}
             <Text style={{fontSize: 50, color:"red"}}>{Config?.APPNAME}</Text>
             <WebviewRender />
         </SafeAreaView>

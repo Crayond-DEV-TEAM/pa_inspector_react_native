@@ -1,5 +1,5 @@
 {
   "//commit": "if ios com.app.pa-inspector else android then app.pa_inspector",
-  "name": "app.pa_inspector",
+  "name": "com.app.pa-inspector",
   "displayName": "PA Inspector"
 }
