@@ -29,7 +29,7 @@ const WebScreen = (props) => {
         // console.log('payload asses', payload);
     };
 
-    console.log('Config', Config)    
+    // console.log('Config', Config)    
     const WebviewRender = () => {
             return (<WebView
                 injectedJavaScript={INJECTED_JAVASCRIPT}
@@ -41,7 +41,7 @@ const WebScreen = (props) => {
     return (
         <SafeAreaView style={styles.container}>
             {/* <Text style={{fontSize: 50, color:"red"}}>Test</Text> */}
-            <Text style={{fontSize: 50, color:"red"}}>{Config?.APPNAME}</Text>
+            {/* <Text style={{fontSize: 50, color:"red"}}>{Config?.APPNAME}</Text> */}
             <WebviewRender />
         </SafeAreaView>
     );
