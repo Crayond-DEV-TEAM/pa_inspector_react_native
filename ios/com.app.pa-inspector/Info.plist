@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>NSLocationUsageDescription</key>
-	<string>YOUR TEXT</string>
+	<string>To check if the person is working in the correctly assigned job location</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>YOUR TEXT</string>
+	<string>To check if the person is working in the correctly assigned job location</string>
 	<key>NSCameraUsageDescription</key>
-    <string>YOUR TEXT</string>
+    <string>Profile picture, as well as to take picture of repair work etc</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-    <string>YOUR TEXT</string>
+    <string>Profile picture, as well as to take picture of repair work etc</string>
 	<key>CFBundleDocumentTypes</key>
 	<array>
 		<dict>
@@ -24,7 +24,7 @@
 		</dict>
 	</array>
 	<key>LSRequiresIPhoneOS</key><true/>
-	<key>LSSupportsOpeningDocumentsInPlace</key> <true/>
+	<key>LSSupportsOpeningDocumentsInPlace</key><true/>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
