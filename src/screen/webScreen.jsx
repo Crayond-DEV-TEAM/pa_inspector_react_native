@@ -29,12 +29,12 @@ const WebScreen = (props) => {
         // console.log('payload asses', payload);
     };
 
-    // console.log('Config', Config)    
+    // console.log('Config', `${Config?.PROJECT_URL}/?deviceToken=${diviceToken}`)    
     const WebviewRender = () => {
             return (<WebView
                 injectedJavaScript={INJECTED_JAVASCRIPT}
                 onMessage={onMessage}
-                source={{ uri: Config?.PROJECT_URL }} style={{ marginTop: 20 }} />
+                source={{ uri: `${Config?.PROJECT_URL}/?deviceToken=${diviceToken}` }} style={{ marginTop: 20 }} />
     )
 }
 

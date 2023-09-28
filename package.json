@@ -12,12 +12,14 @@
     "build-worker": "cp ./.env.worker ./.env && npx react-native run-android"
   },
   "dependencies": {
-    "@react-native-firebase/app": "^18.3.0",
-    "@react-native-firebase/messaging": "^18.3.0",
+    "@notifee/react-native": "^7.8.0",
+    "@react-native-firebase/app": "^18.5.0",
+    "@react-native-firebase/messaging": "^18.5.0",
     "react": "18.2.0",
     "react-native": "0.72.3",
     "react-native-config": "^1.5.1",
     "react-native-eject": "^0.2.0",
+    "react-native-splash-screen": "^3.3.0",
     "react-native-webview": "^13.3.1"
   },
   "devDependencies": {
