@@ -50,7 +50,7 @@ target 'com.app.pa-inspector' do
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
 
-  target 'com.app.pa-inspector-dev' do
+  target 'com.app.paWorker' do
     inherit! :complete
     # Pods for testing
   end

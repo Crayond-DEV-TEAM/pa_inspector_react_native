@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Volumes/Office/RN/pa_inspector_react_native/ios/com.app.pa-inspector.xcodeproj">
+      location = "group:com.app.pa-inspector.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

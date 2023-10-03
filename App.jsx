@@ -24,7 +24,6 @@ const App = () => {
 
   useEffect(() => {
     setupNotifications();
-    setupFCM();
   }, []);
 
   React.useEffect(() => {
@@ -39,6 +38,7 @@ const App = () => {
     
     const settings = await notifee.getNotificationSettings();
     await notifee.requestPermission();
+    await setupFCM();
     // await messaging().registerDeviceForRemoteMessages();
 
     if (settings.authorizationStatus === AuthorizationStatus.NOT_DETERMINED) {
