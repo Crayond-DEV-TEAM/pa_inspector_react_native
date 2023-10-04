@@ -23,7 +23,7 @@ const App = () => {
   const [token, setToken] = useState("");
 
   useEffect(() => {
-    setupNotifications();
+    // setupNotifications();
   }, []);
 
   React.useEffect(() => {
