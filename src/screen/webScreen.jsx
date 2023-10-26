@@ -1,10 +1,8 @@
 import React from 'react';
 
 import {
-    // SafeAreaView,
     StatusBar,
     StyleSheet,
-    Text,
     Dimensions,
     View,
     Platform,
@@ -55,7 +53,7 @@ const WebScreen = (props) => {
 }
 
     return (
-        <View style={{flex: 1,backgroundColor:"#B20606"}}>
+        <View style={{flex: 1,backgroundColor: Config?.APPNAME === "worker1" ? "#501C58" : "#B20606" }}>
             <SafeAreaProvider style={{flex: 1}}>
                 <StatusBar translucent backgroundColor={"#B20606"} barStyle="light-content"/>
                 <SafeAreaView style={{flex:1, paddingBottom: isIOS && height < 812 ? -1 : -40}}>
